@@ -1,5 +1,6 @@
 package mx.cecyt9.ipn.examen_primerparcial_gonzalezhuitronkarla;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,10 +29,14 @@ public class MainActivity extends AppCompatActivity {
         if(Usuario.equals(UsuarioObtenido)&&Password.equals(PasswordObtenida)){
             //Mandar llamar actividad correcta
             Toast.makeText(getApplicationContext(),"Usuario Correcto", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this,Reserva1.class);
+            startActivity(intent);
         }
         else{
             //Mandar llamar actividad error
             Toast.makeText(getApplicationContext(),"Usuario Incorrecto", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this,Error.class);
+            startActivity(intent);
         }
     }
 }
