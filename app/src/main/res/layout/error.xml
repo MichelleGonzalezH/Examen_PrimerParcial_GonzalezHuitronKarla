@@ -20,7 +20,7 @@
         android:id="@+id/imageView"
         android:layout_width="311dp"
         android:layout_height="307dp"
-        app:srcCompat="@drawable/ImgMichelle"
+        app:srcCompat="@drawable/imgmichelle"
         tools:layout_editor_absoluteX="37dp"
         tools:layout_editor_absoluteY="102dp" />
 
